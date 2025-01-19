@@ -285,7 +285,7 @@ main {
 }
 
 footer {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     width: 100%;
     margin: 0 auto;
 
@@ -334,10 +334,15 @@ footer {
 @media screen and (max-width:768px) {
 
     .nav-bar,
-    .nav-links,
-    .featured {
+    .nav-links {
         flex-direction: column;
     }
+
+    .featured {
+        flex-direction: column-reverse;
+        margin-left: 10px;
+    }
+
 
     .banner {
         flex-direction: column-reverse;
@@ -356,6 +361,9 @@ footer {
         margin-left: 50px;
     }
 
-    .banner-title {}
+    .banner-content {
+        margin-left: 10px;
+    }
+
 
 }
