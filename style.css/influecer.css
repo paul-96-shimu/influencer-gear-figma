@@ -63,13 +63,14 @@
 /* start banner part */
 .banner-content {
     max-width: 582px;
-    margin: 50px;
+
     margin-top: 7px;
 }
 
+
 .banner {
     display: flex;
-    justify-content: space-evenly;
+
     align-items: center;
     gap: 133px;
 }
@@ -99,9 +100,7 @@
 .btn-primary {
     border-radius: 41px;
     background: #E02C6D;
-    display: inline-flex;
     padding: 10px 24px;
-    align-items: flex-start;
     gap: 8px;
     border: none;
     margin-top: 7px;
@@ -117,10 +116,13 @@
 
 .banner-img {
     background-image: url('../images/Circle\ design.svg');
-    border-radius: 475px;
-    width: 475px;
-    height: 475px;
     margin-top: 50px;
+}
+
+.banner-img img {
+
+    width: 100%;
+    max-width: 440px;
 }
 
 /* ===main part=== */
@@ -146,9 +148,9 @@ main {
 }
 
 /* =====start card section style */
-.card-section {
+/* .card-section {
     width: 100%;
-}
+} */
 
 .card-container {
 
@@ -187,7 +189,7 @@ main {
 .card img {
     width: 100%;
     max-width: 300px;
-    object-fit: cover;
+
 }
 
 .card-content h3 {
@@ -212,7 +214,7 @@ main {
 .description {
     color: var(--Gray-50, #787885);
     font-family: Inter;
-    font-size: 14px;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 143%;
@@ -220,16 +222,23 @@ main {
     letter-spacing: 0.252px;
 }
 
-.btn-middle {
-    color: rgba(224, 44, 109, 0.87);
+.see-more {
 
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Poppins;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-align: right;
+    margin-top: 50px;
+
+}
+
+.see-more a {
+    color: rgba(224, 44, 109, 0.87);
     text-decoration: none;
+
 }
 
 /* === start featured part*/
@@ -274,7 +283,6 @@ main {
     color: #FFF;
     font-size: 1rem;
 }
-
 
 footer {
     max-width: 1440px;
@@ -345,6 +353,9 @@ footer {
 
     .card-container {
         grid-template-columns: repeat(1, 1fr);
+        margin-left: 50px;
     }
+
+    .banner-title {}
 
 }
