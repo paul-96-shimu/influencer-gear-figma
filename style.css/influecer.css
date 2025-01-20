@@ -127,10 +127,7 @@
 }
 
 /* ===main part=== */
-main {
-    max-width: 1440px;
-    margin: 0 auto;
-}
+
 
 /* ====start icon section style */
 .border {
@@ -336,7 +333,7 @@ footer {
     line-height: 24px;
 }
 
-@media screen and (max-width:767 px) {
+@media screen and (max-width:767px) {
 
     .nav-bar,
     .nav-links {
